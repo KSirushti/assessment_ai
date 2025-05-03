@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assessment Report</title>
+</head>
+<body>
+    <h1>Assessment Report</h1>
+    <p>Score: {{ score }}/100</p>
+    <h2>Skill Map</h2>
+    <ul>
+        {% for skill, count in skill_map.items %}
+            <li>{{ skill }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
